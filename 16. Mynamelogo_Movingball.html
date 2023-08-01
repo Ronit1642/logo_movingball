@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Page</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box; 
+    }
+    body{
+        overflow: hidden;
+        background-color:#164B60;
+    }
+    p{
+        color: aqua;
+        
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+    #ball{
+        width: 50px;
+        height: 50px;
+        border-radius:50%;
+        background-color:#bc982d;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        animation:moveBall 5s infinite;
+    }
+    @keyframes moveBall {
+        0%{
+            top: 50%;
+            left: 50%;
+            box-shadow: 0px 15px 30px black;
+        }
+        20%{
+            top: 0%;
+            left: 50%;
+            background-color:lightseagreen;
+            box-shadow: 0px 15px 30px black;
+
+        }
+        
+        40%{
+            top: 50%;
+            left:0%;
+            background-color:lightcoral;
+            box-shadow:15px 15px 30px black;
+
+        }
+        60%{
+            top: 100%;
+            left:50%;
+            background-color: lightgreen;
+            box-shadow:-15px 15px 30px black;
+
+        }
+
+
+        80%{
+            top: 50%;
+            left:100%;
+            background-color:skyblue;
+            box-shadow:15px -15px 30px black;
+        }
+
+
+        100%{
+            top: 50%;
+            left:50%;
+            background-color:magenta;
+            /* box-shadow:0px 15px 30px black; */
+        }    
+
+    }
+</style>
+<style>
+    .logo-container{
+        width:200px;
+        height:200px;
+        background-color:#FF8989;
+        border-radius:50%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute ;
+        top: 01%;
+        left: 40%;
+        text-align: center;
+       
+
+       
+        
+        }
+    .triangle{
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 87px solid #E4A5FF;
+    }
+    .logo-text{
+        font-size: 50px;
+        color: #9AC5F4;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class = "logo-container">
+        <div class="triangle"></div>
+        <span class="logo-text">RK</span>
+    </div>
+    <h2>Welcome to Ronit World</h2>
+    <div class ="container">
+        <div id="ball"></div>
+    </div>
+    
+
+
+    
+
+
+</body>
+</html>
